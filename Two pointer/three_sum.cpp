@@ -14,7 +14,7 @@ public:
         sort(nums.begin(),nums.end());
         for (int i = 0;i<n-2;i++){ // cuz atleast 3 elements are needed to form a triplet, so we can stop at n-2
             if(i>0 && nums[i]==nums[i-1]){
-                continue;
+                continue; // if current element is same as previous element then we can skip it to avoid duplicates
             }
             int left = i+1; // left pointer starts from the next element of i otherwise same as i 
             int right = n-1;
