@@ -5,7 +5,7 @@ public:
     int shortestSubarray(vector<int>& nums, int k) {
         int n = nums.size();
         vector<long long> prefix(n + 1, 0);
-        // prefix[i] = sum of the first i elements.
+        // prefix[i] = sum of the first i elements
         for (int i = 0; i < n; i++) {
             prefix[i + 1] = prefix[i] + nums[i];
         }
